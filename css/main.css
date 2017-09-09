@@ -1,0 +1,232 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+/**************************************
+Body
+***************************************/
+body {
+  color: #999;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+
+
+/**************************************
+Pause/Play Button
+***************************************/
+.jp-play, .jp-pause {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 60px solid #644144;
+  margin: 100px auto 50px auto;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  left: 10px;
+}
+.jp-play:before, .jp-pause:before {
+  content: '';
+  position: absolute;
+  top: -75px;
+  left: -115.0px;
+  bottom: -75px;
+  right: -35px;
+  border-radius: 50%;
+  border: 10px solid #644144;
+  z-index: 2;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+.jp-play:after, .jp-pause:after {
+  content: '';
+  opacity: 0;
+  transition: opacity 0.6s;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+}
+.jp-play:hover:before, .jp-play:focus:before, .jp-pause:hover:before, .jp-pause:focus:before  {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.jp-play.active, .jp-pause.active {
+  border-color: transparent;
+}
+.jp-play.active:after, .jp-pause.active:after {
+  content: '';
+  opacity: 1;
+  width: 50px;
+  height: 80px;
+  background: #644144;
+  position: absolute;
+  right: 5px;
+  top: -40px;
+  border-left: 20px solid #644144;
+  
+}
+
+/**************************************
+Headings and anchor styles
+***************************************/
+
+
+.glass {
+  background-color: rgba(54, 25, 25, .5);
+  text-align: center;
+  max-height: 50%;
+  max-width: 50%;
+  padding: .5% 2%;
+  margin: 2% 25%;
+  
+}
+
+a {
+  outline: 0;
+}
+
+a:hover, a:active, a:focus {
+  /* styling for any way a link is about to be used */
+  outline: 0;
+}
+
+h1 {
+  margin: 0 20%;
+  text-transform: uppercase;
+  color: #afcadc;
+  letter-spacing: 2px;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+ h2 {
+  
+  color: #ffdac8;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  display: inline;
+}
+
+ h2 a {
+  text-decoration: none;
+  color: #ffdac8;
+  outline: 0;
+}
+
+h2.underline {
+  text-decoration:underline;  
+  color: #ffdac8;
+  font-size: 1.3em;
+}
+
+h2.playing {
+  font-size: 1.2em;
+}
+
+p {
+  margin: 20px 20%;
+  color: #ffdac8;
+}
+
+
+/**************************************
+Basic styling 
+***************************************/
+
+.title_text {
+  margin: 5% 0 0 0;
+
+}
+
+.headline {
+  display: block;
+  color: #afcadc;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+/**************************************
+Video
+***************************************/
+
+/****** For IE 8 *********/
+
+
+/****** Video Style *********/
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/Winter.jpg) no-repeat;
+    background-size: cover; 
+}
+
+/****** Turns off the video and displays a background image *********/
+
+@media screen and (max-width: 1042px) {
+    
+  body {
+      background: url(../img/Winter.jpg) #000 no-repeat center center fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #464646;
+    }
+
+#bgvid {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+/**************************************
+Footer and social Icons
+***************************************/
+
+footer {
+  font-size: 0.95em;
+  text-align: center;
+  clear: both;
+  padding-top: 25%;
+  color: #2c3e50;
+
+}
+
+footer img {
+    width: 40px; /* you can use % */
+    height: auto;
+}
+
+footer p {
+  color: #afcadc;
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+}

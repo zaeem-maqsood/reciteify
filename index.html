@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="icon" type="image/png" href="Favicon/favicon.png">
+		<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-70618305-1', 'auto');
+  		ga('send', 'pageview');
+
+		</script>
+		<script type="text/javascript" src="script/jquery.js"></script>
+		<script type="text/javascript" src="script/jquery.jplayer.min.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>reciteify | recitation for the soul</title>
+	</head>
+
+	<body>	
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+	  		var js, fjs = d.getElementsByTagName(s)[0];
+	  		if (d.getElementById(id)) return;
+	  		js = d.createElement(s); js.id = id;
+	  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+	  		fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script> 
+
+		<video autoplay loop poster="img/Winter.jpg" id="bgvid">
+			<source src="video/Masjid.ogv" type="video/ogv" alt="Masjid in Turkey">
+			<source src="video/Winter.mp4" type="video/mp4" alt="Masjid in Turkey">
+		</video>
+
+		<div class="title_text">
+			<h1>Recitation for the soul.</h1>
+			<span class="headline">Press play to listen.</span>
+		</div>
+		
+
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				
+					<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+				 		 <div class="jp-type-single">
+				  			<div class="jp-gui jp-interface">
+				  				<div class="jp-controls-holder">
+				  					<div class="jp-controls">
+										<a href="javascript:;" class="jp-play" tabindex="1" onclick="showDiv()"></a>
+										<a href="javascript:;" class="jp-pause" tabindex="1"></a>
+										<div id="nextDiv"  style="display:none;"><h2><a href="javascript:;" class="jp-next" tabindex="1">Play next</a>
+										</h2>
+										</div>
+									</div>
+								</div>	
+							</div>
+
+
+							<div class="jp-no-solution">
+					      	<span>Update Required</span>
+					      	To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				    		</div>
+			    		</div>
+			 </div>
+				
+				<div style="display:none;" class="glass" id="glass">	
+					<h2 id="now_playing"  style="display:none;" class="underline">Now Playing:</h2>	
+					<h2 class="playing"   id="title_player"></h2>
+				</div>	
+				
+		
+			<footer>
+				<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.reciteify.com" data-text="Reciteify | Recitation for the soul" data-size="large" data-hashtags="reciteify">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> <br>
+				<div class="fb-share-button" data-href="http://www.reciteify.com" data-layout="button"></div>
+					<!-- <a href="http://twitter.com/zaeem_m"><img src="img/twitter.png" alt="Twitter" class="social-icon"></a> -->
+					<p>tweet us recitations you think we should add</p>
+				 	<p>&copy; 2015 reciteify.com</p>
+			</footer>
+		
+	</body>
+</html>
